@@ -1,0 +1,18 @@
+{
+  "ProfileTitle": "Profile",
+  "Name": "Name",
+  "Message_EnterName": "Enter name",
+  "Update": "Update",
+  "Menu_Bill": "Bill",
+  "Menu_History": "History",
+  "Menu_Planning": "Planning",
+  "Menu_NewRecord": "New record",
+  "Menu_Category": "Category",
+  "Create": "Create",
+  "Limit": "Limit",
+  "Edit": "Edit",
+  "Name_Category": "Name",
+  "Cat_Min_Value": "Minimum value",
+  "Cat_Enter_Name": "Enter category name",
+  "Cat_Select": "Select a category"
+}

@@ -1,5 +1,5 @@
 <template>
-  <ul class="sidenav app-sidenav" :class="{open: value}">
+  <ul class="sidenav app-sidenav" :class="{ open: value }">
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -14,29 +14,30 @@
 </template>
 
 <script>
+import localizeFilter from "@/filters/localize.filter";
 export default {
   props: ["value"],
   data: () => ({
     links: [
       {
-        title: "Счет",
+        title: localizeFilter("Menu_Bill"),
         url: "/",
         exact: true
       },
       {
-        title: "История",
+        title: localizeFilter("Menu_History"),
         url: "/history"
       },
       {
-        title: "Планирование",
+        title: localizeFilter("Menu_Planning"),
         url: "/planning"
       },
       {
-        title: "Новая запись",
+        title: localizeFilter("Menu_NewRecord"),
         url: "/record"
       },
       {
-        title: "Категории",
+        title: localizeFilter("Menu_Category"),
         url: "/categories"
       }
     ]
