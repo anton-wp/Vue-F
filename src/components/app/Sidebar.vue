@@ -39,7 +39,11 @@ export default {
       {
         title: localizeFilter("Menu_Category"),
         url: "/categories"
-      }
+      },
+      {
+        title: localizeFilter("Menu_Users"),
+        url: "/users"
+      },
     ]
   })
 };

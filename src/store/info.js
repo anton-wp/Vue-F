@@ -31,6 +31,16 @@ export default {
         throw e
       }
     },
+    async getUserInfo({}, id) {
+      const info = (await firebase.database().ref(`/users/${id}/info`).once('value')).val()
+      return info
+    },
+    async updateInfoUser({}, {
+      id,
+      NDate
+    }) {
+      await firebase.database().ref(`/users/${id}/info`).update(NDate)
+    },
     async fetchInfo({
       dispatch,
       commit

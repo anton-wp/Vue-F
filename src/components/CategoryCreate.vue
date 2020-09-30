@@ -36,7 +36,6 @@
             {{ $v.limit.$params.minValue.min }}</span
           >
         </div>
-
         <button class="btn waves-effect waves-light" type="submit">
           {{ "Create" | localize }}
           <i class="material-icons right">send</i>
